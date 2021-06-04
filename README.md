@@ -5,6 +5,7 @@ Este proyecto fue realizado por Alejandro Medina y Christian Mora para la materi
 --------------------------------------------------------------
 Recursos e instrucciones necesarias para la ejecución correcta. 
 --------------------------------------------------------------
+![alt text](https://github.com/ChristianMora-art/Proyecto-Final-Sistemas-Embebidos/blob/main/Im%C3%A1genes/Flowchart.png)
 
 
 1. Crear una ruta /home/pi/Proyectos/ProyectoFinal/
