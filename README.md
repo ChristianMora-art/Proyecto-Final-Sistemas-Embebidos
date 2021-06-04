@@ -15,7 +15,7 @@ sudo systemctl enable audio.service
 sudo systemctl enable drivercheck.service
 6. Crear autorización entre la RPi y el dispositivo de destino
 
-*Para correr el proceso de Python3
+* Para correr el proceso de Python3
 
 1. Instalar la libreria de python sounddevice
 2. Instalar la libreria de python scipy
