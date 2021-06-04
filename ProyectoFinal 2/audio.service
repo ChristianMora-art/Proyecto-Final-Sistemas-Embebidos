@@ -1,0 +1,16 @@
+[Unit]
+Description=Daemon para el launcher
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /home/pi/Proyectos/ProyectoFinal/launcher.sh
+User=pi
+WorkingDirectory=/home/pi/Proyectos/ProyectoFinal/ 
+Restart=on-failure
+RestartSec=1
+StandardOutput=syslog
+StandardError=inherit
+
+[Install]
+WantedBy=multi-user.target

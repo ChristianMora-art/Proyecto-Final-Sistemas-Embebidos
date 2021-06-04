@@ -1,0 +1,16 @@
+[Unit]
+Description=Daemon para el audio
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /home/pi/Proyectos/ProyectoFinal/drivercheck.sh
+User=pi
+WorkingDirectory=/home/pi/Proyectos/ProyectoFinal/ 
+Restart=on-failure
+RestartSec=1
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
