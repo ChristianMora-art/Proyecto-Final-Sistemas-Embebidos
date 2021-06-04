@@ -2,7 +2,7 @@
 Este documento es la guía para la configuración inicial de la Raspberry Pi para el uso del sistema de adquisición de multicanal
 Este proyecto fue realizado por Alejandro Medina y Christian Mora para la materia de Sistemas Embebidos 2021-I de la Maestría en Ingeniería Electrónica e IoT de la Pontificia Universidad Javeriana.  
 
-[link al vídeo de explicación del proyecto](https://www.youtube.com/watch?v=HRZc2nXUQ2E&list=UUHQuirMlpEr_i_X1PUuOYdw&index=2)
+[link al vídeo de la presentación y explicación del proyecto](https://www.youtube.com/watch?v=HRZc2nXUQ2E&list=UUHQuirMlpEr_i_X1PUuOYdw&index=2)
 Presentamos en este video: 
 1. 0:00 - 1:18 Esquema general y pretensión del proyecto.
 2. 1:19 - 2:46 Esquema particular y algoritmia según los scripts presentes.
