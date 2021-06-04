@@ -2,6 +2,8 @@
 Este documento es la guía para la configuración inicial de la Raspberry Pi para el uso del sistema de adquisición de multicanal
 Este proyecto fue realizado por Alejandro Medina y Christian Mora para la materia de Sistemas Embebidos 2021-I de la Maestría en Ingeniería Electrónica e IoT de la Pontificia Universidad Javeriana.  
 
+[link al vídeo de explicación del proyecto](https://www.youtube.com/watch?v=HRZc2nXUQ2E&list=UUHQuirMlpEr_i_X1PUuOYdw&index=2)
+
 --------------------------------------------------------------
 Recursos e instrucciones necesarias para la ejecución correcta. 
 --------------------------------------------------------------
@@ -15,7 +17,7 @@ Para el desarrollo del proyecto se utilizó una Raspberry Pi 4 Modelo B (TX), un
 ![alt text](https://github.com/ChristianMora-art/Proyecto-Final-Sistemas-Embebidos/blob/main/Im%C3%A1genes/Raspberry_Pi_4_Model_B.jpg)
 ![alt text](https://github.com/ChristianMora-art/Proyecto-Final-Sistemas-Embebidos/blob/main/Im%C3%A1genes/Scarlett2i4.jpeg)
 
-* La conexiones analógicas En las siguientes imágenes se aprecia la conexión necesaria:
+* La conexiones analógicas de la tarjeta de audio a la RPi se aprecian en las siguientes imágenes. En el presente trabajo se utilizaron un par de guitarras eléctricas para probar la captura de señales. 
 
 ![alt text](https://github.com/ChristianMora-art/Proyecto-Final-Sistemas-Embebidos/blob/main/Im%C3%A1genes/con1.jpg)
 ![alt text](https://github.com/ChristianMora-art/Proyecto-Final-Sistemas-Embebidos/blob/main/Im%C3%A1genes/con2.jpg)
@@ -29,7 +31,7 @@ En la RPi:
 En el dispositivo receptor:
 - Decryption.sh
 --------------------------------------------------------------
-Para copia segura a dispositivo de destino
+* Para copia segura a dispositivo de destino
 --------------------------------------------------------------
 1. Crear llaves private.pem y public.pem en dispositivo de destino
 2. Copiar llave public.pem a la Raspberry /home/pi/Proyectos/ProyectoFinal/
