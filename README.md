@@ -5,28 +5,56 @@ Este proyecto fue realizado por Alejandro Medina y Christian Mora para la materi
 --------------------------------------------------------------
 Recursos e instrucciones necesarias para la ejecución correcta. 
 --------------------------------------------------------------
+El flujo y esquema del proyecto son los siguiente:
+![alt text](https://github.com/ChristianMora-art/Proyecto-Final-Sistemas-Embebidos/blob/main/Im%C3%A1genes/ProyectoFinal.png)
+
 ![alt text](https://github.com/ChristianMora-art/Proyecto-Final-Sistemas-Embebidos/blob/main/Im%C3%A1genes/Flowchart.png)
 
+En el presente se encuentran los siguientes scripts (presentados en orden):
+En la RPi:
+- Launcher.sh & drivercheck.sh
+- audio_process3.py
+- securecopy.sh
 
-1. Crear una ruta /home/pi/Proyectos/ProyectoFinal/
-2. Copiar todos los archivos de códigos a esta ruta.
-3. Copiar los servicios audio.service y drivercheck.service a la ruta /etc/systemd/system/
-sudo systemctl start audio.service
-sudo systemctl start drivercheck.service
-4. Permitir que se suban los servicios, para cuando la máquina se inicie o reinicie 
-sudo systemctl enable audio.service
-sudo systemctl enable drivercheck.service
-6. Crear autorización entre la RPi y el dispositivo de destino
+En el dispositivo receptor:
+-Decryption.sh
 
-* Para correr el proceso de Python3
-
-1. Instalar la librería de python3 sounddevice
-2. Instalar la librería de python3 scipy
---------------------------------------------------------------
 --------------------------------------------------------------
 Para copia segura a dispositivo de destino
 --------------------------------------------------------------
 1. Crear llaves private.pem y public.pem en dispositivo de destino
 2. Copiar llave public.pem a la Raspberry /home/pi/Proyectos/ProyectoFinal/
+En el archivo "crearLLaves.sh" están los comandos necesarios para crear el par de llaves asimétricas que deben generarse por el dispositivo receptor, una vez creadas este par de llaves, se debe enviar la llave pública a la RPi para que esta pueda encriptar la llave simétrica que debe ser creada en la RPi (cuyo comando de generación también se encuentra en este archivo).
+
 --------------------------------------------------------------
+* Instrucciones en la RPi 
+1. Crear una ruta /home/pi/Proyectos/ProyectoFinal/
+2. Copiar todos los archivos de códigos a esta ruta.
+3. Crear la llave simétrica aesKey.txt con el código hallado en "crearLLaves.sh".
+4. Copiar los servicios audio.service y drivercheck.service a la ruta /etc/systemd/system/
+sudo systemctl start audio.service
+sudo systemctl start drivercheck.service
+5. Permitir que se suban los servicios, para cuando la máquina se inicie o reinicie 
+sudo systemctl enable audio.service
+sudo systemctl enable drivercheck.service
+6. Crear autorización entre la RPi y el dispositivo de destino:
+* Si es un dispositivo UNIX basta con ejecutar estos comandos:
+ssh-keygen
+ssh-copy-id username@IP
+* Si es un dispositivo Windows (en este ejemplo se envía la llave pública del dispositivo Windows a la RPi, debe ser al contrario):
+ssh-keygen
+luego, buscar la ruta de la llave pública generada y enviarla a la RPi al directorio /usr/bin/
+hacer un scp C:\Users\USER/.ssh/id_rsa.pub pi@IP:/home/pi/.ssh/id_rsa.pub.backup
+luego hacer desde la RPi: cat  /home/pi/.ssh/id_rsa.pub.backup >> /home/pi/.ssh/autorized_keys
+
+--------------------------------------------------------------
+* Para correr el proceso de Python3
+1. Instalar la librería de python3 numpy y sounddevice
+pip install numpy
+python3 -m pip install sounddevice --user
+2. Instalar la librería de python3 scipy
+pip3 install scipy
+--------------------------------------------------------------
+
+
 --------------------------------------------------------------
