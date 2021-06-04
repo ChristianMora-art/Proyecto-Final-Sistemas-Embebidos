@@ -13,10 +13,12 @@ El flujo y esquema del proyecto son los siguiente:
 Para el desarrollo del proyecto se utilizó una Raspberry Pi 4 Modelo B (TX), una interfaz de audio Focusrite Scarlett 2i4 (2 canales de entrada, Línea u XLR) y un Macintosh iMac (27-inch, Late 2013) macOS High Sierra. 
 
 ![alt text](https://github.com/ChristianMora-art/Proyecto-Final-Sistemas-Embebidos/blob/main/Im%C3%A1genes/Raspberry_Pi_4_Model_B.jpg)
-![alt text](https://github.com/ChristianMora-art/Proyecto-Final-Sistemas-Embebidos/blob/main/Im%C3%A1genes/Raspberry_Pi_4_Model_B.jpg)
+![alt text](https://github.com/ChristianMora-art/Proyecto-Final-Sistemas-Embebidos/blob/main/Im%C3%A1genes/Scarlett2i4.jpeg)
 
-La conexiones analógicas En las siguientes imágenes se aprecia la conexión necesaria:
+* La conexiones analógicas En las siguientes imágenes se aprecia la conexión necesaria:
 
+![alt text](https://github.com/ChristianMora-art/Proyecto-Final-Sistemas-Embebidos/blob/main/Im%C3%A1genes/con1.jpg)
+![alt text](https://github.com/ChristianMora-art/Proyecto-Final-Sistemas-Embebidos/blob/main/Im%C3%A1genes/con2.jpg)
 --------------------------------------------------------------
 En el presente se encuentran los siguientes scripts (presentados en orden):
 En la RPi:
