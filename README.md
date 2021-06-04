@@ -3,8 +3,10 @@ Este documento es la guía para la configuración inicial de la Raspberry Pi par
 Este proyecto fue realizado por Alejandro Medina y Christian Mora para la materia de Sistemas Embebidos 2021-I de la Maestría en Ingeniería Electrónica e IoT de la Pontificia Universidad Javeriana.  
 
 --------------------------------------------------------------
-Organizar directorios para la ejecución correcta. 
+Recursos e instrucciones necesarias para la ejecución correcta. 
 --------------------------------------------------------------
+
+
 1. Crear una ruta /home/pi/Proyectos/ProyectoFinal/
 2. Copiar todos los archivos de códigos a esta ruta.
 3. Copiar los servicios audio.service y drivercheck.service a la ruta /etc/systemd/system/
@@ -17,8 +19,8 @@ sudo systemctl enable drivercheck.service
 
 * Para correr el proceso de Python3
 
-1. Instalar la libreria de python sounddevice
-2. Instalar la libreria de python scipy
+1. Instalar la librería de python3 sounddevice
+2. Instalar la librería de python3 scipy
 --------------------------------------------------------------
 --------------------------------------------------------------
 Para copia segura a dispositivo de destino
