@@ -70,10 +70,10 @@ luego hacer desde la RPi: cat  /home/pi/.ssh/id_rsa.pub.backup >> /home/pi/.ssh/
 
 --------------------------------------------------------------
 * Para correr el proceso de Python3
-1. Instalar la librería de python3 numpy y sounddevice
-pip install numpy
-python3 -m pip install sounddevice --user
-2. Instalar la librería de python3 scipy
+1. Instalar la librería de python3 numpy y sounddevice.
+ pip install numpy
+ python3 -m pip install sounddevice --user
+2. Instalar la librería de python3 scipy.
 pip3 install scipy
 --------------------------------------------------------------
 
