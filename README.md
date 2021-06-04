@@ -10,6 +10,11 @@ El flujo y esquema del proyecto son los siguiente:
 
 ![alt text](https://github.com/ChristianMora-art/Proyecto-Final-Sistemas-Embebidos/blob/main/Im%C3%A1genes/Flowchart.png)
 
+Para el desarrollo del proyecto se utilizó una Raspberry Pi 4 Modelo B (TX), una interfaz de audio Focusrite Scarlett 2i4 (2 canales de entrada, Línea u XLR) y un Macintosh iMac (27-inch, Late 2013) macOS High Sierra. 
+
+La conexiones analógicas En las siguientes imágenes se aprecia la conexión necesaria:
+
+--------------------------------------------------------------
 En el presente se encuentran los siguientes scripts (presentados en orden):
 En la RPi:
 - Launcher.sh & drivercheck.sh
@@ -17,8 +22,7 @@ En la RPi:
 - securecopy.sh
 
 En el dispositivo receptor:
--Decryption.sh
-
+- Decryption.sh
 --------------------------------------------------------------
 Para copia segura a dispositivo de destino
 --------------------------------------------------------------
@@ -28,6 +32,7 @@ En el archivo "crearLLaves.sh" están los comandos necesarios para crear el par 
 
 --------------------------------------------------------------
 * Instrucciones en la RPi 
+--------------------------------------------------------------
 1. Crear una ruta /home/pi/Proyectos/ProyectoFinal/
 2. Copiar todos los archivos de códigos a esta ruta.
 3. Crear la llave simétrica aesKey.txt con el código hallado en "crearLLaves.sh".
